@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet' />
     <script language="javascript">
         function autoNotify() {
             var pop = document.getElementById('notifypop')
@@ -13,7 +14,7 @@
         .map {
             width: 100%;
             height: auto;
-            border: 5px outset red;
+            border: 2px outset red;
             background-color: black;
         }
         body {
@@ -24,11 +25,14 @@
             width: 100%;
             height: auto;
         }
+        h2 {
+            font-family: Koulen
+        }
     </style>
 </head>
 
 <body>
-    <center>Wargames - Simulating Thermo Nuclear War</center><br />
+    <center><h2>Wargames - Simulating Thermo Nuclear War</h2></center>
     <audio id="notifypop" controls>
         <source src="assets/strangegame.ogg" type="audio/ogg" preload="auto">
     </audio>
