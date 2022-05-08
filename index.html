@@ -1,1 +1,41 @@
-Hello, World!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script language="javascript">
+        function autoNotify() {
+            var pop = document.getElementById('notifypop')
+            pop.play()
+        }
+    </script>
+    <style>
+        #notifypop { display:none; }
+        .map {
+            width: 100%;
+            height: auto;
+            border: 5px outset red;
+            background-color: black;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center>Wargames - Simulating Thermo Nuclear War</center><br />
+    <audio id="notifypop" controls>
+        <source src="assets/strangegame.ogg" type="audio/ogg" preload="auto">
+    </audio>
+    <div class="map" onclick="autoNotify()">
+        <img src="assets/world_map.svg">
+    </div>
+
+</body>
+
+</html>
