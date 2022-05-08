@@ -19,32 +19,41 @@
         }
     </script>
     <style>
-        #notifypop { display:none; }
+        #notifypop {
+            display: none;
+        }
+
         #map {
             width: 100%;
             height: auto;
             border: 2px outset red;
             background-color: black;
         }
+
         body {
             background-color: black;
             color: white;
             font-family: Koulen
         }
+
         img {
             width: 100%;
             height: 100%;
         }
+
         a {
             color: white;
         }
+
         #note {
+            position: relative;
             text-align: right;
             font-size: 0.875em;
         }
+
         #start {
             position: absolute;
-            top:100px;
+            top: 100px;
             opacity: 0.2;
             transition: opacity 1s;
             width: 100%;
@@ -52,6 +61,7 @@
             text-align: center;
             font-size: 14em;
         }
+
         #start.hide {
             opacity: 0;
         }
@@ -59,18 +69,20 @@
 </head>
 
 <body>
-    <center><h2>Wargames - Simulating Thermo Nuclear War</h2></center>
+    <center>
+        <h2>Wargames - Simulating Thermo Nuclear War</h2>
+    </center>
     <audio id="notifypop" controls>
         <source src="assets/strangegame.ogg" type="audio/ogg" preload="auto">
     </audio>
-        <div id="map" onclick="autoNotify()">
-            <img src="assets/world_map.svg">
-            <div id="start" onmouseover="hideStart()" onclick="hideStart()">
-                START!
-            </div>
+    <div id="map" onclick="autoNotify()">
+        <img src="assets/world_map.svg">
+        <div id="start" onmouseover="hideStart()" onclick="hideStart()">
+            START!
         </div>
-
-        <div id="note">Being created with 🤍 for humanity by <a href="https://read.cv/roland" target="_blank">Roland</a></div>
+    </div>
+    <div id="note">Being created with 🤍 for humanity by <a href="https://read.cv/roland" target="_blank">Roland</a>
+    </div>
 </body>
 
 </html>
